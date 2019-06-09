@@ -9,7 +9,7 @@ namespace WindowsServiceAgent.Application
             var processInfo = new ProcessStartInfo
             {
                 WindowStyle = ProcessWindowStyle.Normal,
-                CreateNoWindow = true,
+                CreateNoWindow = true, //Start cmd without creating a window:
                 UseShellExecute = false,
                 FileName = "CMD.exe",
                 Arguments = @"/C c:\temp\test.bat"
